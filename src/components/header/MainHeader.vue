@@ -18,6 +18,6 @@ export default {
   position: relative;
   height: 100vh;
   width: 100vw;
-  border-bottom: 5px solid #f59a55;
+  border-bottom: 6px solid #f59a55;
 }
 </style>

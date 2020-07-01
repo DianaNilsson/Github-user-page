@@ -16,15 +16,6 @@ export default {
 </script>
 
 <style>
-/* Global CSS rules */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  color: #1a1a1a;
-  text-decoration: none;
-  overflow-x: hidden;
-  font-family: "Roboto", sans-serif;
-}
+@import "./assets/css-reset.css";
+@import "./assets/css-responsive.css";
 </style>
