@@ -50,14 +50,19 @@ export default {};
   position: absolute;
   right: 4rem;
   bottom: -3.6rem;
-
   cursor: pointer;
-
   transition: all 0.2s;
 }
 
 #header-content > button:hover {
   background-color: #f3b265;
   border: 2px solid #f3b265;
+}
+
+@media only screen and (max-width: 450px) and (orientation: portrait),
+  only screen and (max-width: 800px) and (orientation: landscape) {
+  #header-content {
+    margin: 3rem;
+  }
 }
 </style>
