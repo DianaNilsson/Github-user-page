@@ -1,6 +1,7 @@
 <template>
   <header id="main-header">
     <main-header-background />
+    <main-header-left-sidebar />
     <main-header-top-sidebar />
     <main-header-content />
   </header>
@@ -9,12 +10,14 @@
 <script>
 import MainHeaderBackground from "@/components/MainHeaderBackground.vue";
 import MainHeaderContent from "@/components/MainHeaderContent.vue";
+import MainHeaderLeftSidebar from "@/components/MainHeaderLeftSidebar.vue";
 import MainHeaderTopSidebar from "@/components/MainHeaderTopSidebar.vue";
 
 export default {
   components: {
     MainHeaderBackground,
     MainHeaderContent,
+    MainHeaderLeftSidebar,
     MainHeaderTopSidebar
   },
   name: "MainHeader"
