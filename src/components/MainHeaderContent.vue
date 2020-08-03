@@ -1,5 +1,5 @@
 <template>
-  <section id="header-content">
+  <section id="main-header-content">
     <h1>
       <span>Min</span> Projektsida
     </h1>
@@ -9,37 +9,39 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "MainHeaderBackground"
+};
 </script>
 
 <style scoped>
-#header-content {
+#main-header-content {
   position: relative;
   max-width: 28rem;
   margin: 3rem 3rem 6rem 20rem;
   overflow: visible;
 }
 
-#header-content h1 {
+#main-header-content h1 {
   margin-bottom: 1.5rem;
   font-size: 3.5rem;
   font-weight: 400;
   color: #fff;
 }
 
-#header-content h1 span {
+#main-header-content h1 span {
   font-size: 3.5rem;
   color: #f3b265;
 }
 
-#header-content h3 {
+#main-header-content h3 {
   color: #fff;
   font-size: 1.3rem;
   font-weight: 400;
   letter-spacing: 0.2px;
 }
 
-#header-content button {
+#main-header-content button {
   background-color: rgba(62, 72, 55, 0.8);
   padding: 0.4rem 0.8rem;
   border: 2px solid #fff;
@@ -54,14 +56,14 @@ export default {};
   transition: all 0.2s;
 }
 
-#header-content > button:hover {
+#main-header-content > button:hover {
   background-color: #f3b265;
   border: 2px solid #f3b265;
 }
 
 @media only screen and (max-width: 450px) and (orientation: portrait),
   only screen and (max-width: 800px) and (orientation: landscape) {
-  #header-content {
+  #main-header-content {
     margin: 3rem;
   }
 }

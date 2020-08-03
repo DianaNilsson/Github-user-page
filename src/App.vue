@@ -6,7 +6,7 @@
 
 <script>
 // @ is an alias to /src
-import MainHeader from "@/components/header/MainHeader.vue";
+import MainHeader from "@/components/MainHeader.vue";
 
 export default {
   components: {

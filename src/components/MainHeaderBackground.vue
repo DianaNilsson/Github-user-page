@@ -1,5 +1,5 @@
 <template>
-  <div class="header-background">
+  <div>
     <div class="bg-img"></div>
     <div class="fog-overlay">
       <div class="fog-img fog-img-first"></div>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "HeaderBackground"
+  name: "MainHeaderBackground"
 };
 </script>
 
@@ -21,7 +21,7 @@ export default {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: #819582 url("../../assets/background.jpg") no-repeat 50%;
+  background: #819582 url("../assets/background.jpg") no-repeat 50%;
   background-size: cover;
 }
 
@@ -44,13 +44,13 @@ export default {
 }
 
 .fog-img-first {
-  background: url("../../assets/fog-1.png");
+  background: url("../assets/fog-1.png");
   background-size: contain;
   animation: marquee 100s linear infinite;
 }
 
 .fog-img-second {
-  background: url("../../assets/fog-2.png");
+  background: url("../assets/fog-2.png");
   background-size: contain;
   animation: marquee 40s linear infinite;
 }
