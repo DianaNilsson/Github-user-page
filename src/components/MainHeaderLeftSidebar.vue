@@ -133,11 +133,6 @@ export default {
   margin: 3.2rem 0.6rem 0;
 }
 
-/* .tablet .social-media-links-container > a,
-.desktop .social-media-links-container > a {
-  margin: 4rem 0.8rem 0 !important;
-} */
-
 .social-media-links-container img {
   height: 1.5rem;
   transition: height 0.1s;
@@ -186,5 +181,13 @@ export default {
 }
 .fade-enter {
   opacity: 0;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 450px) and (orientation: portrait),
+  only screen and (max-width: 850px) and (max-height: 450px) {
+  #main-header-left-sidebar {
+    display: none;
+  }
 }
 </style>

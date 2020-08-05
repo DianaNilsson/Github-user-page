@@ -62,7 +62,7 @@ export default {
 }
 
 @media only screen and (max-width: 450px) and (orientation: portrait),
-  only screen and (max-width: 800px) and (orientation: landscape) {
+  only screen and (max-width: 800px) and (max-height: 450px) {
   #main-header-content {
     margin: 3rem;
   }
