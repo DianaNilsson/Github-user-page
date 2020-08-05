@@ -124,13 +124,17 @@ export default {
   align-items: center;
 }
 
+.social-media-links-container > a {
+  margin: 3.2rem 0.9rem 0;
+}
+
 .sidebar-expanded .social-media-links-container {
   justify-content: center;
   margin-bottom: 0.5rem;
 }
 
-.social-media-links-container > a {
-  margin: 3.2rem 0.6rem 0;
+.sidebar-expanded .social-media-links-container img {
+  height: 1.2rem;
 }
 
 .social-media-links-container img {
@@ -139,7 +143,7 @@ export default {
 }
 
 .social-media-links-container img:hover {
-  height: 2rem;
+  height: 1.8rem;
 }
 
 /* Page navigation */
@@ -159,11 +163,6 @@ export default {
   color: #fff;
   font-size: 1rem;
   font-weight: 300;
-}
-
-.tablet .page-nav > a,
-.desktop .page-nav > a {
-  margin-top: 2rem !important;
 }
 
 .page-nav > a:hover {
