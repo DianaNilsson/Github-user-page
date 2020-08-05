@@ -1,7 +1,7 @@
 <template>
-  <header id="main-header-top-sidebar" :class="{'sidebar-expanded': !sidebarCollapsed}">
+  <aside id="main-header-top-sidebar" :class="{'sidebar-expanded': !sidebarCollapsed}">
     <p>Diana Nilsson | Frontendutvecklare</p>
-  </header>
+  </aside>
 </template>
 
 <script>
