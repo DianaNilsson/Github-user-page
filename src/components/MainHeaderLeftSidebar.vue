@@ -3,9 +3,26 @@
     id="main-header-left-sidebar"
     :class="{'sidebar-expanded': !sidebarCollapsed, 'sidebar-collapsed': sidebarCollapsed}"
   >
-    <button class="menu-bar">
-      <img src="../assets/icons/bar.png" alt="menu-bar" @click="menuClick" />
+    <button class="menu-bar" @click="menuClick">
+      <img src="../assets/icons/bar.png" alt="menu-bar" />
     </button>
+
+    <transition name="fade">
+      <nav class="page-nav flex" v-if="!sidebarCollapsed">
+        <a href>
+          <img src="../assets/icons/user.png" alt="Om mig" />Om mig
+        </a>
+        <a href>
+          <img src="../assets/icons/skills.png" alt="Skills" />Skills
+        </a>
+        <a href>
+          <img src="../assets/icons/project.png" alt="Projekt" />Projekt
+        </a>
+        <a href>
+          <img src="../assets/icons/mail.png" alt="Kontakt" />Kontakt
+        </a>
+      </nav>
+    </transition>
 
     <nav class="social-media-links-container">
       <a href="https://github.com/DianaNilsson">
@@ -66,6 +83,10 @@ export default {
   white-space: nowrap;
 }
 
+.sidebar-expanded {
+  width: 11rem !important;
+}
+
 /* Menu bar */
 .menu-bar {
   position: absolute;
@@ -74,18 +95,13 @@ export default {
   height: 3.6rem;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   border-bottom: 2px solid #ffffff;
 }
 
 .menu-bar img {
   height: 2rem;
-  transition: height 0.2s;
-}
-
-.menu-bar img:hover {
-  height: 2.4rem;
+  margin-left: 0.8rem;
 }
 
 .menu-bar:hover {
@@ -123,11 +139,52 @@ export default {
 } */
 
 .social-media-links-container img {
-  height: 1.6rem;
+  height: 1.5rem;
   transition: height 0.1s;
 }
 
 .social-media-links-container img:hover {
   height: 2rem;
+}
+
+/* Page navigation */
+.page-nav {
+  display: flex;
+  padding-top: 1.5rem;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.page-nav > a {
+  display: flex;
+  align-items: flex-end;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.tablet .page-nav > a,
+.desktop .page-nav > a {
+  margin-top: 2rem !important;
+}
+
+.page-nav > a:hover {
+  background-color: rgba(62, 72, 55, 0.4);
+}
+
+.page-nav img {
+  height: 1.4rem;
+  margin-right: 0.7rem;
+}
+
+/* Vue transitions for page navigation */
+.fade-enter-active {
+  transition: opacity 1s;
+}
+.fade-enter {
+  opacity: 0;
 }
 </style>
