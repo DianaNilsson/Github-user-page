@@ -1,8 +1,8 @@
 <template>
   <header id="main-header">
     <main-header-background />
-    <main-header-left-sidebar />
-    <main-header-top-sidebar />
+    <main-header-left-sidebar @sidebar-changed="onSidebarChange" />
+    <main-header-top-sidebar :sidebar-collapsed="sidebarCollapsed" />
     <main-header-content />
   </header>
 </template>
@@ -14,11 +14,21 @@ import MainHeaderLeftSidebar from "@/components/MainHeaderLeftSidebar.vue";
 import MainHeaderTopSidebar from "@/components/MainHeaderTopSidebar.vue";
 
 export default {
+  data() {
+    return {
+      sidebarCollapsed: true
+    };
+  },
   components: {
     MainHeaderBackground,
     MainHeaderContent,
     MainHeaderLeftSidebar,
     MainHeaderTopSidebar
+  },
+  methods: {
+    onSidebarChange(sidebar) {
+      this.sidebarCollapsed = sidebar.status;
+    }
   },
   name: "MainHeader"
 };
