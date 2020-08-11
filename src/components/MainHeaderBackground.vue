@@ -4,6 +4,7 @@
     <div class="fog-overlay">
       <div class="fog-img fog-img-first"></div>
       <div class="fog-img fog-img-second"></div>
+      <div class="fog-img fog-img-second"></div>
     </div>
   </div>
 </template>
@@ -21,7 +22,7 @@ export default {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: #819582 url("../assets/background.jpg") no-repeat 50%;
+  background: #819582 url("../assets/background.jpg") no-repeat 70% 80%;
   background-size: cover;
 }
 

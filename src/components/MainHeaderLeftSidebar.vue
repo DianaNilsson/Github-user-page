@@ -70,7 +70,7 @@ export default {
   left: 0;
   width: 3.6rem;
   height: 100%;
-  background-color: rgba(62, 72, 55, 0.3);
+  background-color: rgba(51, 51, 51, 0.4);
   border-right: 2px solid #ffffff;
 
   display: flex;
@@ -105,16 +105,12 @@ export default {
 }
 
 .menu-bar:hover {
-  background-color: rgba(62, 72, 55, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Social media links */
 .social-media-links-container {
   display: flex;
-}
-
-.sidebar-collapsed .social-media-links-container:hover {
-  background-color: rgba(62, 72, 55, 0.3);
 }
 
 .sidebar-collapsed .social-media-links-container {
@@ -166,7 +162,7 @@ export default {
 }
 
 .page-nav > a:hover {
-  background-color: rgba(62, 72, 55, 0.4);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .page-nav img {

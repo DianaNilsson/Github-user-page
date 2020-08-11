@@ -25,15 +25,11 @@ export default {
   display: flex;
   align-items: center;
   padding: 0 5rem;
-  background-color: rgba(62, 72, 55, 0.3);
+  background-color: rgba(51, 51, 51, 0.4);
   border-bottom: 2px solid #ffffff;
 
   transition: left 0.3s;
   white-space: nowrap;
-}
-
-#main-header-top-sidebar:hover {
-  background-color: rgba(62, 72, 55, 0.4);
 }
 
 #main-header-top-sidebar > p {

@@ -18,7 +18,7 @@ export default {
 #main-header-content {
   position: relative;
   max-width: 28rem;
-  margin: 3rem 3rem 6rem 20rem;
+  margin: 3rem 12rem 3rem 3rem;
   overflow: visible;
 }
 
@@ -31,7 +31,7 @@ export default {
 
 #main-header-content h1 span {
   font-size: 3.5rem;
-  color: #f3b265;
+  color: #c43b3b;
 }
 
 #main-header-content h3 {
@@ -42,9 +42,9 @@ export default {
 }
 
 #main-header-content button {
-  background-color: rgba(62, 72, 55, 0.8);
-  padding: 0.4rem 0.8rem;
-  border: 2px solid #fff;
+  background-color: #c43b3b;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid #c43b3b;
   border-radius: 2px;
   font-size: 1.1rem;
   color: #fff;
@@ -57,12 +57,11 @@ export default {
 }
 
 #main-header-content > button:hover {
-  background-color: #f3b265;
-  border: 2px solid #f3b265;
+  background-color: rgba(62, 72, 55, 0.8);
+  border: 2px solid #fff;
 }
 
-@media only screen and (max-width: 450px) and (orientation: portrait),
-  only screen and (max-width: 850px) and (max-height: 450px) {
+@media only screen and (max-width: 800px) {
   #main-header-content {
     margin: 3rem;
   }
