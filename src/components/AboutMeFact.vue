@@ -76,7 +76,7 @@ export default {
 .fact-box {
   width: 30%;
   height: 16rem;
-  background-color: rgba(88, 140, 126, 0.85);
+  /* background-color: rgba(88, 140, 126, 0.85); */
   background-color: rgba(196, 59, 59, 0.8);
   border: 2px solid #fff;
   padding: 2rem;
