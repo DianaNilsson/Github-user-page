@@ -24,4 +24,12 @@
     background-color: transparent;
     cursor: pointer;
   }
+
+  li {
+    overflow-x: visible;
+  }
+
+  ul {
+    padding: 0 1rem;
+  }
   
