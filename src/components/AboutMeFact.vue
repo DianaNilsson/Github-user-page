@@ -131,16 +131,11 @@ export default {
   overflow-y: hidden;
 }
 
-ul {
-  padding: 0 1rem;
-}
-
 li {
   font-size: 14px;
   line-height: 1.4;
   font-weight: 300;
   color: #fff;
   margin-bottom: 0.6rem;
-  overflow-x: visible;
 }
 </style>
