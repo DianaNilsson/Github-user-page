@@ -1,9 +1,10 @@
 <template>
   <section id="main-header-content">
     <h1>
-      <span>Min</span> Projektsida
+      Dianas Portfolio
+      <!-- <span>Min</span> Projektsida -->
     </h1>
-    <h3>Välkommen till min projektsida! Här delar jag med mig av projekt och arbeten som jag skapar under min väg mot att bli en duktig frontendutvecklare.</h3>
+    <h3>Välkommen! Här delar jag med mig av projekt och arbeten som jag skapar under min väg mot att bli en duktig frontendutvecklare.</h3>
     <button>Visa projekt</button>
   </section>
 </template>
@@ -24,14 +25,15 @@ export default {
 
 #main-header-content h1 {
   margin-bottom: 1.5rem;
-  font-size: 3.5rem;
+  font-size: 3.6rem;
   font-weight: 400;
   color: #fff;
 }
 
 #main-header-content h1 span {
   font-size: 3.5rem;
-  color: #c43b3b;
+  /* font-weight: 600; */
+  color: #fff;
 }
 
 #main-header-content h3 {
@@ -42,9 +44,9 @@ export default {
 }
 
 #main-header-content button {
-  background-color: #c43b3b;
+  background-color: #ca4e4e;
   padding: 0.35rem 0.8rem;
-  border: 1px solid #c43b3b;
+  border: 1px solid #ca4e4e;
   border-radius: 2px;
   font-size: 1.1rem;
   color: #fff;
