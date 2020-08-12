@@ -26,7 +26,7 @@ export default {
   width: 100vw;
   height: 30rem;
   background-color: #629d8d;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
 }
 
 .skills h2 {
@@ -64,6 +64,7 @@ export default {
   font-size: 1.4rem;
   font-weight: 300;
   text-transform: uppercase;
+  letter-spacing: 1px;
   color: #fff;
   margin-bottom: 1rem;
 }
@@ -71,6 +72,7 @@ export default {
 .education-timeline {
   border-left: 2px solid #fff;
   overflow: visible;
+  padding: 0 1rem;
   /* list-style: none; */
 }
 

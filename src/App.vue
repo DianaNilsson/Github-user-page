@@ -3,6 +3,7 @@
     <main-header></main-header>
     <about-me></about-me>
     <skills></skills>
+    <projects></projects>
   </div>
 </template>
 
@@ -11,12 +12,14 @@
 import MainHeader from "@/components/MainHeader.vue";
 import AboutMe from "@/components/AboutMe.vue";
 import Skills from "@/components/Skills.vue";
+import Projects from "@/components/Projects.vue";
 
 export default {
   components: {
     MainHeader,
     AboutMe,
-    Skills
+    Skills,
+    Projects
   }
 };
 </script>

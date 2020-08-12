@@ -68,6 +68,7 @@ export default {
   font-size: 1.4rem;
   font-weight: 300;
   text-transform: uppercase;
+  letter-spacing: 1px;
   color: #fff;
   margin-bottom: 1rem;
 }
@@ -129,6 +130,10 @@ export default {
   border: 2px solid #fff;
   padding: 2rem;
   overflow-y: hidden;
+}
+
+ul {
+  padding: 0 1rem;
 }
 
 li {
